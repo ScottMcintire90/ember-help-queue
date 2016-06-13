@@ -1,4 +1,10 @@
-<div class="boxModel">
-  <h1 id="title">Help Queue</h1>
-  {{outlet}}
-</div>
+<nav class="nav">
+      <ul class="nav">
+            {{#link-to 'index'}}Home{{/link-to}}
+            {{#link-to 'about'}}About{{/link-to}}
+            {{#link-to 'contact'}}Contact{{/link-to}}
+            {{#link-to 'teacher'}}Teacher{{/link-to}}
+      </ul>
+</nav>
+<h1 id="header">Help Queue</h1>
+{{outlet}}
