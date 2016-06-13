@@ -1,0 +1,5 @@
+<h5>{{#link-to 'index'}}Home Page{{/link-to}}</h5>
+
+{{#each model as |ticket|}}
+{{teacher-ticket-tile ticket=ticket destroyTicket="destroyTicket"}}
+{{/each}}

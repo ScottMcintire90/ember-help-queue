@@ -1,0 +1,6 @@
+<h5>{{#link-to 'teacher'}}Teacher Page{{/link-to}}</h5>
+{{#each model as |ticket|}}
+{{ticket-tile ticket=ticket}}
+{{/each}}
+<br>
+{{new-ticket saveTicket="saveTicket"}}
