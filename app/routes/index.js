@@ -10,7 +10,8 @@ export default Ember.Route.extend({
       var newTicket = this.store.createRecord('ticket', params);
       newTicket.save();
       this.transitionTo('index');
-    }
+    },
+
   }
 
 });

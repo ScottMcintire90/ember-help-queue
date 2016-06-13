@@ -6,7 +6,6 @@ export default Ember.Route.extend({
   },
   actions: {
     destroyTicket(ticket) {
-      alert("red alert");
       return ticket.destroyRecord();
       this.transitionTo('teacher');
     },
