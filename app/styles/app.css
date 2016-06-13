@@ -1,12 +1,15 @@
 .boxModel {
   margin-top: 40px;
-  margin-left: 30%;
-  margin-right: 30%;
+  margin-left: 15%;
+  margin-right: 15%;
   border: 2px solid black;
   border-radius: 25px;
   padding: 20px;
-  box-shadow: 10px 10px 5px #0F516E;
+  box-shadow: 10px 10px 5px #232A2E;
   background-color: #F58100;
+  text-align: left;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 .form-control {
   width: 300px;
@@ -17,17 +20,19 @@
   margin-right: 40%;
 }
 
-.newTicket{
+.newTicket {
   text-align: center;
   margin-top: 25px;
   border-radius: 25px;
+
 }
-#newTick {#0F516E
+#newTick {
   border-radius: 25px;
   padding: 9px;
   font-size: 20px;
-  border: 2px solid #0F516E;
+  border: 2px solid #F58100;
   -webkit-border-radius: 15px;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 #header {
@@ -38,8 +43,10 @@
   margin-left: 180px;
   margin-right: 180px;
   margin-bottom: 40px;
-  background-color: #0F516E;
+  background-color: #056E9B;
   border-radius: 25px;
+  box-shadow: 10px 10px 5px #232A2E;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 
 }
 footer {
@@ -53,7 +60,11 @@ footer a {
 }
 
 body {
-  background-color: #056E9B;
+background: url(http://www.texturezine.com/wp-content/uploads/2014/05/blue-polygon.jpg) no-repeat center center fixed;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
 }
 
 nav {
@@ -67,4 +78,11 @@ nav a {
   color: white;
   font-size: 19px;
   margin: 40px;
+}
+
+.boxContainer {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 20px;
+  padding-bottom: 100px;
 }
