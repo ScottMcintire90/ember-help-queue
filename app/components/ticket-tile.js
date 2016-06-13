@@ -2,6 +2,8 @@ import Ember from 'ember';
 import moment from 'moment';
 
 export default Ember.Component.extend({
+  sort: ['date:desc'],
+  sortedTickets: Ember.computed.sort('ticket.date', 'sort'),
 
   timeElapsed: Ember.computed('ticket', function(){
     var secondsElapsed = (moment().unix() - this.get('ticket.date')) / 60;
