@@ -9,8 +9,10 @@ export default Ember.Component.extend({
     var secondsElapsed = (moment().unix() - this.get('ticket.date')) / 60;
     if (secondsElapsed.toPrecision(2) > 0 && secondsElapsed.toPrecision(2) < 10) {
       return secondsElapsed.toPrecision(1);
-    } else {
+    } else if (secondsElapsed.toPrecision(2) > 10 && secondsElapsed.toPrecision(2) < 100) {
       return secondsElapsed.toPrecision(2);
+    } else {
+      return secondsElapsed.toPrecision(3);
     }
   })
 });
